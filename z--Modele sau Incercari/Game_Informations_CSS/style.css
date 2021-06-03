@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+  }
+  body{
+    font-family: montserrat;
+    background: url("../Poze/background_first_page.png") ;
+  }
+  img{
+      float: left;
+      width: 500px;
+      height: 300px;
+      padding: 30px 30px 0 30px;
+  }
+ .Game{
+      text-align: justify;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 30px 30px 0px 30px;
+  }
+
+a{
+    color:magenta;
+}
+h2.Rating{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+}
+
+ul{
+    padding: 10px 30px 10px 40px; 
+}
+ul.b{
+    list-style-type:square;
+}
+
+.slidershow{
+     margin:auto;
+    width: 70%;
+    height: 50%;
+    overflow: hidden;
+    padding: 10px 0 100px 0;
+}
+.navigation{
+    margin:auto;
+    position:relative;
+    bottom: 10%;
+    left: 80%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition:  0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.slide video{
+    width:  100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+.back{
+width: 100%;
+padding: 8px 10px;
+font-size: 15px;
+border: 0;
+cursor:pointer;
+border-radius: 3px;
+outline: none;
+}
+
+.container{
+  position: relative;
+  width: 400px;
+  margin:auto;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover{
+  text-decoration: underline;
+}
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 8px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 8px;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn button:hover{
+  background: #1b1b1b;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: rgb(20, 214, 37);
+}
+
+.box{
+  position: relative;
+  width: 400px;
+  margin:auto;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

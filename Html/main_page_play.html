@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <title>play? - Games</title>
+      <meta charset="UTF-8" />
+      <link rel="icon" href="../Poze/logo.png" type="image/x-icon" sizes="16x16">
+      <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "../css/style.css" rel = "stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+
+<body>
+
+
+
+
+<div class="disk disk_opened_right">
+  
+<div class="preload" id="preload">
+</div>
+
+<div class="beforeload" id="beforeload">
+  <div class="itemsbar">
+    <div class="searchbox">
+      <input type="text" id="myInput" onkeyup="searchGameFilter()" placeholder="Search for game.." title="Type in a name">
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Age</button>
+    <div class="dropdown-content " id="user_pegi_age">
+      <button class="btn" onclick="filterAge('all')"> ShowAll</button>
+    </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Category</button>
+    <div id="categories" class="dropdown-content categories">
+      <button class="btn" onclick="filterSelection('all')"> ShowAll</button>
+    </div>
+  </div>
+  
+  <button id="myBtnToAllGames" class="dropbtn">Add Game</button>
+
+<!-- The Modal -->
+<div id="AllGames" class="AllGames">
+
+  <!-- Modal content -->
+  <div class="AllGames-content">
+    <span class="close">&times;</span>
+    <div class="itemsbar">
+      <div class="searchbox">
+        <input type="text" id="myInput2" onkeyup="searchGameFilter()" placeholder="Search for game.." title="Type in a name">
+      </div>
+      <div class="ranking">
+        <button onclick = "location.href ='../Html/statistics/game_rankings.html'" class="dropbtn">Statistics</button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Age</button>
+      <div class="dropdown-content " id="all_pegi_age">
+        <button class="btn" onclick="filterAgeAll('all')"> ShowAll</button>
+      </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Category</button>
+        <div id="allcategories" class="dropdown-content">
+         <button class="btn" onclick="filterSelectionAll('all')"> ShowAll</button>
+        </div>
+      </div>
+    </div>
+    <div class="games_gallery">
+      
+    </div>
+    
+      <script>
+          
+
+        </script>
+      
+      </div>
+
+</div>
+  
+
+</div>
+  
+
+  <div class="content" id="usergames">
+    <div class="left_button">
+      <a style="text-align: center;" href="../Html/next_page_play.html"></a>
+      <p style="text-align: center;">Go To</p>
+      <p style="text-align: center;">tournaments</p>
+      <p style="text-align: center;">account</p>
+   </div>
+  <div class="games_gallery">
+  </div>
+</div>
+</div>
+</div>
+
+<div class="disk disk_opened_left">
+  
+    
+   
+
+</div>
+
+
+
+<script>
+// $(function() {
+//     $(".preload").fadeOut(2000, function() {
+//         $(".beforeload").fadeIn(1000);        
+//     });
+// });
+  // Get the modal
+
+  var modal = document.getElementById("AllGames");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtnToAllGames");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../Js/main_page_play.js"></script>
+<script>
+  // Wait for window load
+  $(window).ready(function() {
+    // Animate loader off screen
+    $("#preload").fadeOut(7000,function(){
+      $('#beforeload').fadeIn(1000);
+    });
+  });
+</script>
+</body>
+</html>

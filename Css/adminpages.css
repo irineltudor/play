@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+    background-image: url("../Poze/background_first_page.png");
+    background-color: #cccccc;
+    background-size: 100%;
+   }
+
+.content{
+
+    
+    position: absolute;
+    top: 50%; /* IMPORTANT */
+    left: 50%; /* IMPORTANT */
+    display: block;
+    width: 720px;
+    height: 868px;
+    margin-top: -434px; /* Half the height */
+    margin-left: -360px; /* Half the width */
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+    
+     
+     z-index:-1;
+
+
+}
+
+.content .logo{
+    
+    background-image: url("../Poze/big_logo.png");
+    position: absolute;
+    left: 50%; /* IMPORTANT */
+    top : 5%;
+    display: block;
+    width: 401px;
+    height: 141px;
+    margin-top: -7.05px; /* Half the height */
+    margin-left: -200.5px; /* Half the width */
+    background-repeat: no-repeat;
+    transform: scale(0.6);
+    
+     
+    
+}
+
+.content .navbar{
+    
+    
+    position: absolute;
+
+    top : 20%;
+    display: block;
+    width: 720px;
+    height: 200px;
+    margin-top: -14.1px; /* Half the height */
+
+    background-repeat: no-repeat;
+    
+     
+    
+
+}
+
+.content .navbar ul {
+    margin-top: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .content .navbar li {
+    float: left;
+  }
+  
+  .content .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .content .navbar li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .content .navbar .active {
+    background-color: lightblue;
+  }
+
+
+  .content .everything{
+     background-color: white;
+     margin-top: 220px;
+     height: 527px;
+
+  }
+
+  .content .everything-score{
+    background-color: white;
+    margin-top: 220px;
+    height: 650px;
+
+ }
+  
+
+  .content .everything .list{
+    display: inline;
+    overflow-y: scroll;
+  
+  }
+
+  .content .everything .addbtn{
+    background-color: gray;
+    border: none;
+    color: black;
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .content .everything .addbtn:hover{
+
+    background-color: white;
+    border: 1px solid black;
+    
+    
+  }
+
+
+.content .everything .addgameModal input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+.content .everything .addgameModal input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+.content .everything .addgameModal button {
+    background-color: #262626;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+.content .everything .addgameModal button:hover {
+    opacity:1;
+  }
+
+  
+  
+  /* Extra styles for the cancel button */
+.content .everything .addgameModal .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+.content .everything .addgameModal .cancelbtn, .enterbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+.content .everything .addgameModal .container {
+    padding: 16px;
+    
+    
+  }
+  
+  /* The Modal (background) */
+.content .everything .addgameModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: -1px;
+    top: 25%;
+    width: 720px; /* Full width */
+    height: 540px;
+    overflow-y: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    
+  }
+  
+  /* Modal Content/Box */
+.content .everything .addgameModal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+.content .everything .addgameModal hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+.content .everything .addgameModal .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+.content .everything .addgameModal .close:hover,
+.content .everything .addgameModal .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+.content .everything .addgameModal .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+
+
+@media screen and (max-width: 620px) {
+    .content{
+        transform: scale(0.45);
+    }
+  
+  }
+
+  .content .everything .addgameModal .modal-content .custom_select{
+    position: relative;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .content .everything .addgameModal .modal-content .custom_select select{
+    -webkit-appearance: none;
+    appearance: none;
+    border:1px solid #d5dbd9;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding:8px 10px;
+    border-radius: 3px;
+    outline: none;
+    font-size:21px;
+  }
+  
+  .content .everything .addgameModal .modal-content .custom_select:before{
+    content:"";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border:8px solid; 
+    border-color:tomato transparent transparent transparent;
+    pointer-events: none;
+  }
+
+  .content .everything .w3-container input[type=text]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .content .everything-score input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .content .everything-score input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .content .everything .addAdminModal input[type=text],input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+.content .everything .addAdminModal input[type=text]:focus,input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+.content .everything .addAdminModal button {
+    background-color: #262626;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+.content .everything .addAdminModal button:hover {
+    opacity:1;
+  }
+
+  
+  
+  /* Extra styles for the cancel button */
+.content .everything .addAdminModal .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+.content .everything .addAdminModal .cancelbtn, .enterbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+.content .everything .addAdminModal .container {
+    padding: 16px;
+    
+    
+  }
+  
+  /* The Modal (background) */
+.content .everything .addAdminModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: -1px;
+    top: 25%;
+    width: 720px; /* Full width */
+    height: 540px;
+    overflow-y: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    
+  }
+  
+  /* Modal Content/Box */
+.content .everything .addAdminModal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+.content .everything .addAdminModal hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+.content .everything .addAdminModal .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+.content .everything .addAdminModal .close:hover,
+.content .everything .addAdminModal .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+.content .everything .addAdminModal .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ .button{
+    width: 100%;
+    color:rgb(217, 233, 238);
+    background-color: #555;
+    position: relative;
+    margin-top: 3%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /*
+  .everything-score .title {
+    padding-top: 30%;
+  }
+
+  .button2{
+    width: 80%;
+  color:rgb(233, 230, 227);
+  background-color: #555;
+  position: relative;
+  margin-left: 9%;
+  margin-top: 2%;
+  font-size: 20px;
+  cursor: pointer;
+  }
+  */

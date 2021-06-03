@@ -1,0 +1,184 @@
+
+  .Game{
+    padding: 20px 30px 0px 30px;
+  }
+h2.d{
+    padding: 50px 0 40px 0;
+}
+h2.e{
+    padding: 50px 0 20px 0;
+}
+
+ul.b{
+    padding: 10px 30px 10px 30px; 
+}
+
+ul.t{
+  list-style-type:square;
+  padding: 10px 30px 10px 800px; 
+}
+li{
+    padding: 5px 30px 5px 30px;
+}
+p{
+    padding: 5px 30px 5px 30px;
+}
+  h2{
+    color:rgba(181, 204, 226, 0.986);
+    padding: 10px 0 10px 0;
+  }
+  h3{
+    color:rgb(238, 219, 159);
+    padding: 10px 0px 10px 20px;
+  }
+  h3.Playzones{
+    padding: 300px 0px 10px 20px;
+  }
+  h4{
+    padding: 10px 0px 0px 40px;
+  }
+
+ p.d{
+     margin-left:80%
+ }
+.re{
+  float:right;
+  padding: 40px 440px 0px 40px;
+}
+.lp{
+  float:left;
+  padding: 20px 440px 0px 100px;
+}
+.Common{
+  color:rgb(185, 181, 181);
+}
+.Rare{
+  color:rgb(18, 188, 218);
+}
+.Uncommon{
+  color:rgb(13, 204, 13);
+}
+.PlayerLoadouts{
+  color:rgb(238, 81, 81);
+}
+.Epic{
+  color:rgb(175, 4, 175);
+}
+.Legendary{
+  color:rgb(240, 236, 11);
+}
+
+.slidershow{
+    margin-top: 1%;
+    width: 70%;
+    height: 50%;
+    overflow: hidden;
+    margin-left:20%;
+}
+
+
+.back{
+    color:rgb(243, 241, 241);
+    background: rgb(134, 133, 131);
+}
+
+.lista{
+  position:relative;
+  margin-left: 10%;
+
+
+}
+
+.lista ul.j{
+width: 50%;
+float: left;
+list-style-type:square;
+
+}
+.lista ul.p{
+width: 50%;
+float: right;
+list-style-type:square;
+}
+
+.lista ul.c{
+  width: 50%;
+  float: left;
+  list-style-type:square;
+}
+.lista ul.y{
+  width: 50%;
+  float: right;
+  list-style-type:square;
+}
+@media screen and (max-width: 750px) {
+  .lista ul.c{
+    width: 100%;
+    float: left;
+  
+  }
+  .lista ul.y{
+    width: 100%;
+    float: left;
+  }
+  .lista ul.j{
+    width: 100%;
+    float: left;
+  
+  }
+  .lista ul.p{
+    width: 100%;
+    float: left;
+  }
+  p{
+    padding: 0 0 0 0;
+    font-size: 14px;
+  }
+  ul{
+    position: relative;
+    padding: 0 0 0 0;
+    font-size: 13px;
+    margin-left: -10%;
+  }
+  img{
+    width: 100%;
+    height: 30%;
+    padding: 0px 0px 0 0px;
+  }
+  .slidershow{
+    width: 100%;
+    margin-left:0%;
+    padding: 10px 0 10px 0;
+  }
+  .navigation{
+    left:53%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .container{
+    width:100%;
+    margin:auto;
+  }
+  .star-widget label{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 374px){
+.star-widget label{
+  font-size: 20px;
+}
+}
+@media screen and (max-width: 500px){
+  #myBtn {
+    padding: 9px;
+    font-size: 15px;
+    bottom: 10px;
+  }
+}
+#myBtn {
+  background-color: rgba(181, 204, 226, 0.986);
+}
+#myBtn:hover {
+  background-color: rgb(199, 177, 106);
+}

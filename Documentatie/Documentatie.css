@@ -1,0 +1,31 @@
+body{
+  max-width: 21cm;
+  margin: auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+ol{
+  list-style-type: none;
+}
+dt{
+  font-weight: 700;
+}
+dd{
+  margin-bottom: 1em;
+}
+h1,h2{
+  color: #4b0061;
+}
+h2{
+  margin-top:3em;
+}
+h3 {
+  margin-top: 2.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: .0375em;
+}
+img{
+  width: 100%;
+}

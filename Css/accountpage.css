@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  body {
+    background-image: url("../Poze/background_first_page.png");
+    background-color: #cccccc;
+    background-size: 100%;
+   }
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+
+.disk{
+  background-image: url("../Poze/disk_image.png");
+  position: absolute;
+  top: 50%; /* IMPORTANT */
+  left: 50%; /* IMPORTANT */
+  display: block;
+   width: 686px;
+   height: 868px;
+   margin-top: -434px; /* Half the height */
+   margin-left: -343px; /* Half the width */
+   background-repeat: no-repeat;
+   transform: scale(0.8);
+  
+   
+   z-index:-1;
+}
+.disk .button{
+  background-image: url("../Poze/open_button.png");
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background-color: transparent;
+  width: 230px;
+  height: 141px;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.disk .button:hover{
+  background-image: url("../Poze/open_button_press.png");
+}
+.disk_opened_right
+{
+  background-image: url("../Poze/disk_opened_rightside_image.png");
+  margin-left: 200px;
+
+
+}
+.disk_opened_left
+{
+  background-image: url("../Poze/disk_opened_leftside_image.png");
+   
+
+}
+.disk_opened_left .content
+{
+    float: left;
+    width: 90%;
+}
+.disk_opened_left .right_button
+{
+    float:right;
+    width: 10%;
+    margin-top: 350px;
+}
+.disk_opened_left .right_button a
+{
+  float:left;
+  text-align: center;
+  content: url("../Poze/right_arrow.png");
+  width: 80%;
+}
+.disk_opened_left .right_button a:hover
+{
+  float:left;
+  content: url("../Poze/right_arrow_hover.png");
+  width: 80%;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .disk
+  {
+    transform: scale(0.4);
+  }
+  
+  .disk_opened_right
+{
+  transform: scale(0.45);
+  margin-left: -37px; 
+  position: fixed;
+}
+.disk_opened_left
+{
+  transform: scale(0.45);
+  
+}
+
+}
+
+.disk_opened_left .topnav {
+    overflow: hidden;
+    margin: 26px 0 0 16px;
+    background-color: black;
+  }
+  
+  .disk_opened_left .topnav a {
+    float: left;
+    margin: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .disk_opened_left .topnav a:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  .disk_opened_left .topnav .active {
+    background-color: gray;
+    color: white;
+  }
+
+  
+ .disk_opened_left .content .logoutbtn
+ {  background-color: blueviolet;
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    position: fixed;  
+    left: 40%;
+    top:90%; 
+    z-index: 100; 
+    outline: none;
+ }
+
+ .disk_opened_left .content .accountinfo
+ { 
+  color:white;
+  font-size: 25px;
+  margin-left:40px;
+   
+  }
+  .disk_opened_left .content .accountinfo{
+   margin-top: 40px;
+   background-color: #555;
+   padding: 10px;
+   border-radius: 5px;
+  }
+
+  .disk_opened_left .content h1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .disk_opened_left .content form{
+    text-align: left;
+    color: white;
+    margin-left: 40px;
+  }
+
+  .disk_opened_left .content form label{
+  font-size: 30px;
+  }
+
+  .disk_opened_left .content input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .disk_opened_left .content form button {
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 230px;
+    height: 50px;
+    margin-left: 170px;
+    margin-top: 20px;
+  }
+
+  .disk_opened_left .content form button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+
+ .disk_opened_left .content .logoutbtn:hover
+ {  background-color: white;
+    color: blueviolet;
+    cursor: pointer;
+   
+ }
+
+
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link href = "../Documentatie/Documentatie.css" rel = "stylesheet">
+    <title>GaMa</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>GaMa - documentation</h1>
+    </header>
+    <div role =" contentinfo">
+        <ol role="directory">
+            <li>
+                <a href="#proiect">
+                    <span>1. </span>
+                    Proiect
+                </a>
+            </li>
+            <li>
+                <a href="#2">
+                    <span>2. </span>
+                    Introducere
+                </a>
+            </li>
+            <li>
+                <a href="#3">
+                    <span>3. </span>
+                    Arhitectura
+                </a>
+            </li>
+            <li>
+                <a href="#4">
+                    <span>4. </span>
+                    Paginile aplicatiei
+                </a>
+            </li>
+            <li>
+                <a href="#5">
+                    <span>5. </span>
+                    Detalii de implementare
+                </a>
+            </li>
+            <li>
+                <a href="#6">
+                    <span>6. </span>
+                    Bibleografie
+                </a>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <dl>
+            <dt>Autori</dt>
+            <dd>
+                <a  href="https://github.com/irineltudor">Urma Tudor-Irinel </a>
+            </dd>
+            <dd>
+                <a  href="https://github.com/irineltudor">Zaharia Andrei-Lucian </a>
+
+            </dd>
+        </dl>
+    </div>
+
+    <section id="proiect">
+        <h2><span>1. </span>Proiect</h2>
+        <p>
+            Sa se conceapa o aplicatie Web care inventariaza (colectii de) jocuri clasice (fizice) si digitale (electronice), inclusiv realizeaza managementul (meta-)datelor aferente: categorie, dimensiuni, imagini, destinatari – copii mici, (pre)scolari, adolescenti, adulti, persoane cu nevoi speciale –, reguli, restrictii (e.g., necesita platforma P, se bazeaza exclusiv pe interactiune vocala) si altele. 
+              
+        </p>
+        <p>
+            Sistemul va oferi suport pentru activitati de organizare de campionate vizand diverse jocuri, plus administrarea utilizatorilor.
+            Se vor genera statistici diverse ce pot fi exportate in formate deschise – minimal, CSV, DocBook si PDF. 
+            Se va realiza, de asemenea, un clasament al celor mai populare jocuri si grupuri de jucatori, disponibil si ca flux de date RSS.
+        </p>
+    </section>
+
+    <section id="2">
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            In zilele noastre, gamingul a ajuns sa fie considerat un "sport". Esport-ul a inceput sa stranga din ce in ce mai multi fani avand turnee cu un potential castig de pana la 
+            $34,330,069.00 pentru o echipa de cinci persoane (Dota 2 International Tournament 2019).
+            Astfel, ne propunem sa cream o aplicatie web care sa ii ofere unui utilizator oportunitatea de a avea o evidenta a tuturor jocurilor sale si totodata posibilitatea de a crea sau participa la turnee pentru jocurile respective (nu se aplica la cele single player).
+        </p>
+        <!-- efectiv ne descriem cum ne-am gandit sa facem aplicatia -->
+    </section>
+
+    <section id="3">
+        <h2><span>3. </span>Arhitectura</h2>
+        Am atasat o poza cu o diagrama care descrie modalitatea de utilizare a aplicatiei.
+        <img src="../Poze/diagrama_usecase.png" alt = "">
+        <!-- o diagrama -->
+    </section>
+
+    <section id="4">
+        <h2><span>4. </span>Paginile aplicatiei</h2>
+<!-- Descriere scurta -->
+        <section id="4.1">
+            <h3><span>4.1 </span>Home Page</h3>
+            <p>
+               Ofera  o interfata ce reprezinta redirectionare  a utilizatorului catre pagina cu inventarul personal de jocuri.
+            </p>
+        </section>
+
+
+        <section id="4.2">
+            <h3><span>4.2 </span>Main page</h3>
+            <p>
+                Pagina pe care se afla jocurile unui urilizator si ofera functionalitati precum: sort, category, add game, search by name, view game details (daca dai click pe el).
+                Butonul add game va afisa lista cu toate jocurile suportate de aplicatia noastra web.
+            </p>
+        </section>
+
+        <section id="4.3">
+            <h3><span>4.3 </span>Statistics</h3>
+            <p>
+                Pe aceasta pagina, utilizatorul poate vedea o statistica a ratingului jocurilor. 
+            </p>
+        </section>
+        <section id="4.4">
+            <h3><span>4.4 </span>"Game"_Information</h3>
+            <p>
+                Fiecare pagina de tipul "game"_information, ofera o scurta descriere a jocului, urmat de un slide-show cu poze respectiv video, din care utilizatorul is poate face o parere despre jocul respectiv.
+                
+            </p>
+            <p>
+                Totodata utilizatorul are posibilitatea de a oferi un rating jocului respectiv ( de la o stea pana la cinci stele, unde o stea reprezinta faptul ca nu ii place deloc jocul, iar cinci faptul ca iubeste jocul).
+            </p>
+        </section>
+        <section id="4.5">
+            <h3><span>4.5 </span>Create Tournament</h3>
+            <p>
+                Ofera posibilitatea utilizatorului de a crea un turneu prin completarea unui anumit chestionar. Astfel, dupa validarea datelor, turneul v-a aparea pe pagina cu turnee.
+            </p>
+        </section>
+        <section id="4.6">
+            <h3><span>4.6 </span>Register Tournament</h3>
+            <p>
+                Aceasta pagina ii ofera utilizatorului posibilitatea de a participa la un turneu prin completarea unui formular de inscriere.
+            </p>
+        </section>
+        <section id="4.7">
+            <h3><span>4.7 </span>Tournaments</h3>
+            <p>
+                Pe aceasta pagina si vor afisa toate turneele create pentru ziua respectiva.
+            </p>
+        </section>
+        <section id="4.8">
+            <h3><span>4.8 </span>Login</h3>
+            <p>
+                Utilizatorul trebuie sa se logheze folosind un username si o parola pentru a putea accesa utilizatile unui cont de pe aceasta pagina.
+            </p>
+        </section>
+        
+        
+    </section>
+<!-- trebuie pentru fiecare pagina -->
+
+
+
+<section id="5">
+    <h2><span>5. </span>Detalii de implementare</h2>
+    <section id="5.1">
+        <h3><span>5.1 </span>Search bar</h3>
+        <p>
+            Pentru searchbar am folosit html si css. Designul nu este in tocmai simplu are putine modificari pentru a se incadra in site si a oferi un aspect estetic.
+        </p>
+    </section>
+    <section id="5.2">
+      
+        <h3><span>5.2 </span>Filtrul</h3>
+            <h3><span>5.2.1 </span>Sort</h3>
+            <p>
+                Pentru sort am folosit html si css. Am ales un design simplu atat butonului care declanseaza "dropdown-ul" cat si butoanelor ce se afiseaza.
+            </p>
+            <h3><span>5.2.1 </span>Category</h3>
+            <p>
+                Pentru category am folosit html si css. Am ales un design simplu atat butonului care declanseaza "dropdown-ul" cat si butoanelor ce se afiseaza.
+            </p>
+
+    </section>
+    <section id="5.3">
+        <h3><span>5.3 </span>Slide Show-ul</h3>
+        <p>
+            Pentru slide-show, care reprezinta o prezentare prin imagini a functionalitatilor jocurilor descrise, am folosit doar css si html.
+            Am ales design-ul de dreptunghi deoarece ofera un aspect estetic si este mult mai usor de apasat atat pentru utilizatorii de pe PC cat si pentru cei de pe telefon.
+        </p>
+    </section>
+    <section id="5.4">
+        <h3><span>5.4 </span>Chart</h3>
+        <p>
+            Pentru chart am folosit o librarie de pe Google Chart, astfel incat sa afiseze o diagrama cu jocurile respectiv ratingul fiecarui joc pentru o statistica prin care sa descoperim jocul cu cel mai bun rating.
+
+        </p>
+    </section>
+    <section id="5.5">
+        <h3><span>5.5 </span>Rating Box</h3>
+        <p>
+            Pentru rating box am folosit atat html, css cat si javascript pentru a crea un obiect interactiv pentru utilizator.
+            Acesta poate selecta cate stelute merita jocul ( un rating pentru jocuri) si in acelasi timp poate oferi si un feedback.
+            Daca se razgandeste, i-am oferit si posibilitatea de a edita ratingul oferit anterior.
+        </p>
+    </section>
+    <section id="5.6">
+        <h3><span>5.6 </span>Back to Top</h3>
+        <p>
+            Deoarece unele jocuri sunt mai complexe si necesita mai multe informatii pentru ai oferi utilizatorului o intelegere mai buna a jocului respectiv, acesta va trebui sa 
+            dea scroll destul de mult. Astfel, daca acesta este pe la finalul paginii, si doreste sa ajunga din nou la inceputul paginii, am oferit posibilitatea de a apasa un butoan amplasat in partea de dreapta jos a paginii pentru a se intoarce inapoi la inceputul paginii ( Back to Top ).
+        </p>
+    </section>
+    <section id="5.7">
+        <h3><span>5.7 </span>Add Game</h3>
+        <p>
+            
+            Dupa apasarea acestui buton vor aparea toate jocurile pe care le putem adauga in inventarul personal. Fiecare joc are o pagina de informatii si un buton de adaugare a acestuia in inventar.
+        </p>
+    </section>
+        <!-- Cred ca trebuie sa trecem si butoanele -->
+    </section>
+
+    <section id="6">
+        <h2><span>6. </span>Bibliografie</h2>
+        <!-- Idk daca mai trebuie adaugat sau nu -->
+            <ul>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.w3schools.com/">w3schools</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://developers.google.com/chart">Google Charts</a>
+                    </cite>
+                </li>
+            </ul>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <title>play? - Tournamets</title>
+      <meta charset="UTF-8" />
+      <link rel="icon" href="../Poze/logo.png" type="image/x-icon" sizes="16x16">
+      <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "../css/nextpage.css" rel = "stylesheet">
+    </head>
+
+    <body>
+
+      <div class="disk disk_opened_right"></div>
+
+      <div class="disk disk_opened_left">
+        
+       
+          <div class="topnav">
+              <a class="active" href="">Tournamets</a>
+              <a href="../Html/account_page_play.html" style="float:right;">Account</a>
+          </div>
+          <div class="content">
+            <div class="preload" id="preload"></div>
+            <div class="beforeload" id="beforeload">
+               <div class="tournament_gallery">
+
+                 </div>
+                </div>
+           </div>
+                 
+          <div class="right_button">
+              <a style="text-align: center;" href="../Html/main_page_play.html"></a>
+              <p style="text-align: center;color: white;">Go To</p>
+              <p style="text-align: center;color: white;">games</p>
+          </div>
+        
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../Js/next_page_play.js"></script>
+<script>
+  // Wait for window load
+  $(window).ready(function() {
+    // Animate loader off screen
+    $("#preload").fadeOut(4000,function(){
+      $('#beforeload').fadeIn(1000);
+    });
+  });
+</script>
+    </body>
+</html>

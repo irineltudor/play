@@ -1,0 +1,291 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  body {
+
+    background-image: url("../Poze/background_first_page.png");
+    background-color: #cccccc;
+    background-size: 100%;
+   }
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+.beforeload{
+  display:none;
+}
+.preload { 
+  background-image : url("../Poze/loading.gif");
+  
+  position: absolute;
+  top: 50%; /* IMPORTANT */
+  left: 50%; /* IMPORTANT */
+  display: block;
+   width: 800px;
+   height: 600px;
+   margin-top: -300px; /* Half the height */
+   margin-left: -400px; /* Half the width */
+   transform : scale(0.25);
+   background-repeat: no-repeat;
+
+  }
+  
+.disk{
+  background-image: url("../Poze/disk_image.png");
+  position: absolute;
+  top: 50%; /* IMPORTANT */
+  left: 50%; /* IMPORTANT */
+  display: block;
+   width: 686px;
+   height: 868px;
+   margin-top: -434px; /* Half the height */
+   margin-left: -343px; /* Half the width */
+   background-repeat: no-repeat;
+   transform: scale(0.8);
+  
+   
+   z-index:-1;
+}
+.disk .button{
+  background-image: url("../Poze/open_button.png");
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background-color: transparent;
+  width: 230px;
+  height: 141px;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.disk .button:hover{
+  background-image: url("../Poze/open_button_press.png");
+}
+.disk_opened_right
+{
+  background-image: url("../Poze/disk_opened_rightside_image.png");
+  margin-left: 200px;
+
+
+}
+.disk_opened_left
+{
+  background-image: url("../Poze/disk_opened_leftside_image.png");
+   
+
+}
+.disk_opened_left .content
+{
+    float: left;
+    width: 90%;
+}
+.disk_opened_left .right_button
+{
+    float:right;
+    width: 10%;
+    margin-top: 350px;
+}
+.disk_opened_left .right_button a
+{
+  float:left;
+  text-align: center;
+  content: url("../Poze/right_arrow.png");
+  width: 80%;
+}
+.disk_opened_left .right_button a:hover
+{
+  float:left;
+  content: url("../Poze/right_arrow_hover.png");
+  width: 80%;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .disk
+  {
+    transform: scale(0.4);
+  }
+  
+  .disk_opened_right
+{
+  transform: scale(0.45);
+  margin-left: -37px; 
+  position: fixed;
+}
+.disk_opened_left
+{
+  transform: scale(0.45);
+  
+}
+
+}
+
+
+.disk_opened_left .topnav {
+    overflow: hidden;
+    margin: 26px 0 0 16px;
+    background-color: black;
+  }
+  
+  .disk_opened_left .topnav a {
+    float: left;
+    margin: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .disk_opened_left .topnav a:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  .disk_opened_left .topnav .active {
+    background-color: gray;
+    color: white;
+  }
+  
+
+  
+  .disk_opened_left .topnav .login-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: #555;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .disk_opened_left .topnav .login-container button:hover {
+    background-color: gray;
+  }
+  
+
+
+.disk_opened_left .content .tournament_gallery
+{  
+  margin-left: 25px;
+  margin-top: 20px;
+  width: 90%;
+  float: left;
+  height: 700px;
+  overflow-y: none;
+  /* overflow-y: scroll; */
+ 
+
+}
+
+
+.disk_opened_left .content .tournament_gallery .tournament
+{ 
+  position: relative;
+  margin: 10px;
+  margin-bottom: 30px;
+  float:left;
+  width: 256px;
+  height: 144px;
+
+}
+.disk_opened_left .content .tournament_gallery .tournament img{
+
+  opacity: 1;
+  width: 256px;
+  height: 144px;
+  cursor: pointer; 
+}
+
+.disk_opened_left .content .tournament_gallery .tournament:hover img {
+  opacity: 0.8;
+}
+
+.disk_opened_left .content .registerTournament input[type=text] ,input[type=tel]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.disk_opened_left .content .infoTournament input[type=text] ,input[type=tel]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.disk_opened_left .content .tournament_gallery .tournament .register{
+  position: absolute;
+  top:30%;
+  left: 5%;
+  background-color: rgb(116, 15, 163);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+.disk_opened_left .content .tournament_gallery .tournament .openbtn{
+  position: absolute;
+  top:35%;
+  left: 35%;
+  background-color: rgb(12, 168, 173);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+.disk_opened_left .content .tournament_gallery .tournament:hover .openbtn {
+  display: block;
+}
+ 
+.disk_opened_left .content .tournament_gallery .tournament:hover .register {
+  display: block;
+}
